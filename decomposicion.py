@@ -4,7 +4,19 @@ class Automovil:
         self.marca = marca
         self.color = color
         self._estado = 'en_reposo'
-        self._motor = None
+        self._motor = Motor(cilindros=4)
+
+    def acelerar(self,tipo='despacio'):
+        """
+        docstring
+        """
+        if tipo=='rapida':
+            self._motor.inyecta_gasolina(10)
+        else:
+            self._motor.inyecta_gasolina(3)
+        
+        self._estado='esta_en_movimiento'
+        pass
 
 
 class Motor:

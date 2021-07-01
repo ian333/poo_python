@@ -45,5 +45,13 @@ for i in range(n):
     for j in range(n):
         print(i,j)
 
-# O(n) + O(n*n)= O(n+(n*n)) =O(n+n**2) = O(n**2) Se reduce n+n**2 a n**2 
-# ya que mientras vaya creciendo al infinito no importa n
+# O(n) + O(n)= O(n*n) =O(n**2) = O(n**2)
+
+#recursividad Multiple
+def fibonacci(n):
+    
+    if n==0 or n==1:
+        return 1
+    return fibonacci(n-1)+fibonacci(n-2)
+
+#en este caso es # O(2**n)

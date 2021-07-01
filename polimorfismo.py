@@ -6,14 +6,29 @@ class Persona:
         print("Ando caminando")
         
 class Ciclista(Persona):
-    def __init__(nombre):
+    
+    def __init__(self,nombre):
         """
-        Esta es una clase que representa un ciclista 
+        Esta es una clase que representa un ciclista y se extiende a la funcion Persona 
         """
         super().__init__(nombre)
 
     def avanza(self):
         """
-        docstring
+        Esta funcion imprime un mensaje
         """
         print("Ando moviendome en bicicleta")
+
+def main():
+    """
+    Esta es la funcion principal por la cual correra nuestro programa
+    """
+    persona=Persona("David")
+    persona.avanza()
+
+    ciclista=Ciclista('Daniela')
+    ciclista.avanza()
+    
+
+if __name__ == "__main__":
+    main()

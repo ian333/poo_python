@@ -1,5 +1,6 @@
 import time
 import sys
+sys.setrecursionlimit(1000000)
 
 def factorial(n):
     """
@@ -22,8 +23,8 @@ def factorial_r(n):
         return n * factorial_r(n-1)
 
 if __name__ == "__main__":
-    n=1000
-    sys.setrecursionlimit(n)
+    n=100000
+    sys.setrecursionlimit(1000000)
     comienzo= time.time()
     factorial(n)
     final=time.time()
@@ -33,5 +34,5 @@ if __name__ == "__main__":
     comienzo= time.time()
     factorial_r(n)
     final=time.time()
-    print("Esta es la funcion no recursiva")
+    print("Esta es la funcion recursiva")
     print(final-comienzo)

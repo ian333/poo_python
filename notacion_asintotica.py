@@ -1,3 +1,5 @@
+
+
 def f(n):
     """
     Esta funcion representa una funcion que crece de una manera de O(n) o bigO(n)

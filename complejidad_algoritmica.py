@@ -1,4 +1,5 @@
 import time
+import sys
 
 def factorial(n):
     """
@@ -22,6 +23,7 @@ def factorial_r(n):
 
 if __name__ == "__main__":
     n=1000
+    sys.setrecursionlimit(n)
     comienzo= time.time()
     factorial(n)
     final=time.time()
